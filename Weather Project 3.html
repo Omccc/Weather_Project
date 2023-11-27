@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Météo</title>
+  <title>Weather</title>
   <link rel="stylesheet" href="styles.css">
   <style>
     body {
@@ -82,11 +82,11 @@
 </head>
 <body>
   <div class="weather-container">
-    <h1>Météo Actuelle</h1>
+    <h1>Current Weather</h1>
     <div class="city-input">
-      <label for="city">Ville:</label>
+      <label for="city">City:</label>
       <input type="text" id="city" placeholder="Entrez une ville">
-      <button onclick="getWeather()">Obtenir la météo</button>
+      <button onclick="getWeather()">Get the Weather</button>
     </div>
     <div class="weather">
       <img src="" alt="Conditions météorologiques" id="weather-icon">
@@ -119,7 +119,7 @@
           description.textContent = data.weather[0].description;
         })
         .catch((error) => {
-          console.error("Une erreur s'est produite lors de la récupération des données météo :", error);
+          console.error("An error has occurred while retrieving weather data:", error);
         });
     }
   </script>
